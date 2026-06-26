@@ -10,7 +10,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
@@ -24,7 +24,7 @@ padding:15px 5%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-border-bottom:2px solid orange;
+border-bottom:2px solid #ff7b00;
 }
 
 .logo{
@@ -44,7 +44,6 @@ font-size:32px;
 
 .logo-text p{
 font-size:14px;
-color:#fff;
 }
 
 .contact{
@@ -55,8 +54,9 @@ font-size:15px;
 .hero{
 padding:80px 5%;
 display:flex;
-align-items:center;
 justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
 }
 
 .hero-text{
@@ -64,8 +64,8 @@ max-width:600px;
 }
 
 .hero-text h2{
-font-size:60px;
-line-height:70px;
+font-size:55px;
+line-height:65px;
 }
 
 .hero-text span{
@@ -90,13 +90,14 @@ font-weight:bold;
 }
 
 .hero-image img{
-width:550px;
-border-radius:15px;
+width:500px;
+max-width:100%;
+border-radius:12px;
 }
 
 .section-title{
 text-align:center;
-margin:50px 0 30px;
+margin:60px 0 30px;
 font-size:40px;
 color:#ff7b00;
 }
@@ -110,8 +111,8 @@ padding:0 5%;
 
 .card{
 background:#0d1a2d;
-padding:25px;
 border:1px solid #ff7b00;
+padding:25px;
 border-radius:10px;
 text-align:center;
 }
@@ -124,11 +125,45 @@ margin-bottom:10px;
 footer{
 margin-top:60px;
 padding:30px;
-text-align:center;
 background:#081522;
-border-top:2px solid orange;
+text-align:center;
+border-top:2px solid #ff7b00;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+}
+
+.hero-text h2{
+font-size:38px;
+line-height:48px;
+}
+
+header{
+flex-direction:column;
+gap:10px;
+}
+
+.contact{
+text-align:center;
+}
 }
 </style>
+
 </head>
 
 <body>
@@ -136,11 +171,13 @@ border-top:2px solid orange;
 <header>
 
 <div class="logo">
-<img src="logo.png">
+<img src="logo.png" alt="Mayra Automation Logo">
+
 <div class="logo-text">
 <h1>MAYRA AUTOMATION</h1>
-<p>Transforming Future with Intelligence</p>
+<p>Transforming the Future with Intelligence</p>
 </div>
+
 </div>
 
 <div class="contact">
@@ -153,57 +190,68 @@ border-top:2px solid orange;
 <section class="hero">
 
 <div class="hero-text">
-<h2>INDUSTRIAL <span>AUTOMATION</span><br> SOLUTIONS</h2>
+
+<h2>
+INDUSTRIAL
+<span>AUTOMATION</span><br>
+SOLUTIONS
+</h2>
 
 <p>
 Complete Industrial Automation,
+PLC Programming,
+HMI Development,
+VFD & Servo Drive Integration,
 Control Panel Manufacturing,
-Machine Retrofitting and Repair
-Solutions Under One Roof.
+Machine Retrofitting and Industrial Repair Services.
 </p>
 
-<a href="tel:6354079196" class="btn">CALL NOW</a>
+<a href="tel:+916354079196" class="btn">
+CALL NOW
+</a>
 
 </div>
 
 <div class="hero-image">
-<img src="hero.jpg">
+<img src="hero.jpg" alt="Industrial Automation">
 </div>
 
 </section>
 
-<h2 class="section-title">OUR SERVICES</h2>
+<h2 class="section-title">
+OUR SERVICES
+</h2>
 
 <div class="services">
 
 <div class="card">
-<h3>Industrial Robotics</h3>
-<p>Advanced robotic solutions for industries.</p>
+<h3>PLC Programming</h3>
+<p>Advanced PLC automation and machine control solutions.</p>
 </div>
 
 <div class="card">
-<h3>Automation Solutions</h3>
-<p>PLC, HMI, VFD and Servo Automation.</p>
+<h3>HMI Development</h3>
+<p>Modern operator interface design and implementation.</p>
 </div>
 
 <div class="card">
-<h3>Retrofitting & Machine Upgradation</h3>
-<p>Upgrade old machines with modern technology.</p>
+<h3>VFD Drive Solutions</h3>
+<p>Motor speed control and energy efficient automation systems.</p>
 </div>
 
 <div class="card">
-<h3>Machine Repair & Troubleshooting</h3>
-<p>Quick diagnosis and industrial repair services.</p>
+<h3>Servo Drive Integration</h3>
+<p>High precision motion control systems for industries.</p>
 </div>
 
 <div class="card">
-<h3>Custom Machine Design</h3>
-<p>Customized industrial machine development.</p>
+<h3>Control Panel Manufacturing</h3>
+<p>Custom industrial electrical and automation panels.</p>
 </div>
 
 <div class="card">
-<h3>Maintenance & Technical Support</h3>
-<p>Reliable after-sales service and support.</p>
+<h3>Machine Retrofitting</h3>
+<p>Upgrade old machines with modern automation technology.</p>
 </div>
 
 </div>
@@ -213,19 +261,27 @@ Solutions Under One Roof.
 <h2>MAYRA AUTOMATION</h2>
 
 <p>
-Lodhika GIDC, Kalawad Road,
-Metoda, Rajkot, Gujarat
+Lodhika GIDC, Kalawad Road,<br>
+Metoda, Rajkot, Gujarat, India
 </p>
+
+<br>
 
 <p>
 📧 mayraautomation@gmail.com
 </p>
 
 <p>
-🌐 www.mayraautomation.com
+📞 +91 63540 79196
 </p>
 
 </footer>
+
+<a class="whatsapp"
+href="https://wa.me/916354079196"
+target="_blank">
+WhatsApp
+</a>
 
 </body>
 </html>
